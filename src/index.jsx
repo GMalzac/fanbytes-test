@@ -8,10 +8,12 @@ import reduxPromise from 'redux-promise';
 // internal modules
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
+import usersReducer from './reducers/users_reducer';
 
 // State and reducers
 const reducers = combineReducers({
-  changeMe: (state = null, action) => state
+  users: usersReducer,
+  // selectedUser: selectedUserReducer
 });
 
 const middlewares = applyMiddleware(reduxPromise);
