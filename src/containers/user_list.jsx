@@ -30,9 +30,9 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
  return bindActionCreators(
- { setUsers: setUsers },
+ { setUsers },
  dispatch
  );
 }
 
-export default connect(mapDispatchToProps, mapDispatchToProps)(UserList);
+export default connect(mapStateToProps, mapDispatchToProps)(UserList);

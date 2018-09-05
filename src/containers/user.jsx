@@ -5,6 +5,8 @@ import { connect } from "react-redux";
 
 class User extends Component {
   render() {
+    const props = this.props;
+
     return(
       <div>
         <p>{this.props.user.id}</p>
