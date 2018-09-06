@@ -27,10 +27,10 @@ class User extends Component {
 
     return(
       <div className="active-user col-xs-12">
-        <h2>ID</h2>
+        <h2><i className="fas fa-user"></i> ID</h2>
         <p>Name: {name}</p>
         <p>Email: {email}</p>
-        <h2>Address</h2>
+        <h2><i className="fas fa-map-marker-alt"></i> Address</h2>
         <p>Street: {address_street}</p>
         <p>Suite: {address_suite}</p>
         <p>City: {address_city}</p>
@@ -39,7 +39,7 @@ class User extends Component {
         <p>Long: {address_long}</p>
         <p>Phone: {phone}</p>
         <p>Website: {website}</p>
-        <h2>Company</h2>
+        <h2><i className="fas fa-building"></i> Company</h2>
         <p>Name: {company_name}</p>
         <p>Catchphrase: {company_cp}</p>
         <p>BS: {company_bs}</p>

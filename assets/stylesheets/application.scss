@@ -1,33 +1,47 @@
 body {
-  font-family: Helvetica;
+  font-family: Lato;
   background-color: #F95342;
 }
 
-.app {
-  margin-top: 20px;
-  margin-bottom: 20px;
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: 900;
 }
+
+// .app {
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+// }
 
 .user-list {
   background-color: white;
-  border-style: solid;
+  cursor: pointer;
   border-radius: 5px;
   margin: 10px;
-  display: flex;
+  margin-right: 100px;
+  // display: flex;
   flex-wrap: wrap;
   padding: 10px;
+  text-align: center;
   }
   .box>* {
      flex: 1 1 160px;
      margin: 10px;
   }
 
+.listed-user {
+  // margin: 5px 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .active-user {
   background-color: white;
-  padding: 10px;
+  padding: 25px;
   margin: 10px;
   border-radius: 5px;
-  border-style: solid;
+
 }
 
 .active-user {
@@ -36,4 +50,6 @@ body {
 
 h2 {
   margin-top: 10px;
+  color: #F95342;
+  font-size: 20px;
 }

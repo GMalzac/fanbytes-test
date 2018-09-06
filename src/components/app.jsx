@@ -4,9 +4,9 @@ import User from '../containers/user';
 
 const App = () => {
   return (
-    <div className="app">
-      <UserList />
-      <User />
+    <div className="container">
+      <div className="col"><UserList /></div>
+      <div className="col"><User /></div>
     </div>
   );
 };
