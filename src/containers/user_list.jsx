@@ -13,14 +13,14 @@ class UserList extends Component {
   }
 
   render() {
-    let containerClasses = "user-list col-sm-4"
+    let containerClasses = "user-list col-xs-12"
     if (this.props.user === this.props.activeUser) {
       containerClasses += " selected";
     }
 
     return (
       <div className={containerClasses}>
-        {this.props.users.map((user) => <p key={user.id} onClick={() => this.props.setActiveUser(user)}>{user.name}</p> )}
+        {this.props.users.map((user) => <div className = "col-xs-6 listed-user" key={user.id} onClick={() => this.props.setActiveUser(user)}>{user.name}</div> )}
       </div>
     );
   }

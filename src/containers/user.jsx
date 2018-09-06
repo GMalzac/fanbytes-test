@@ -26,20 +26,23 @@ class User extends Component {
     }
 
     return(
-      <div className="active-user col-xs-7">
-        <p>{name}</p>
-        <p>{email}</p>
-        <p>{address_street}</p>
-        <p>{address_suite}</p>
-        <p>{address_city}</p>
-        <p>{address_zip}</p>
-        <p>{address_lat}</p>
-        <p>{address_long}</p>
-        <p>{phone}</p>
-        <p>{website}</p>
-        <p>{company_name}</p>
-        <p>{company_cp}</p>
-        <p>{company_bs}</p>
+      <div className="active-user col-xs-12">
+        <h2>ID</h2>
+        <p>Name: {name}</p>
+        <p>Email: {email}</p>
+        <h2>Address</h2>
+        <p>Street: {address_street}</p>
+        <p>Suite: {address_suite}</p>
+        <p>City: {address_city}</p>
+        <p>ZIP: {address_zip}</p>
+        <p>Lat: {address_lat}</p>
+        <p>Long: {address_long}</p>
+        <p>Phone: {phone}</p>
+        <p>Website: {website}</p>
+        <h2>Company</h2>
+        <p>Name: {company_name}</p>
+        <p>Catchphrase: {company_cp}</p>
+        <p>BS: {company_bs}</p>
       </div>
     );
   }

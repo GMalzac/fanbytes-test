@@ -4,7 +4,7 @@ import User from '../containers/user';
 
 const App = () => {
   return (
-    <div className="root">
+    <div className="app">
       <UserList />
       <User />
     </div>

@@ -1,5 +1,6 @@
 body {
   font-family: Helvetica;
+  background-color: #F95342;
 }
 
 .app {
@@ -8,9 +9,31 @@ body {
 }
 
 .user-list {
+  background-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  }
+  .box>* {
+     flex: 1 1 160px;
+     margin: 10px;
+  }
+
+.active-user {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
   border-style: solid;
 }
 
 .active-user {
 
+}
+
+h2 {
+  margin-top: 10px;
 }
