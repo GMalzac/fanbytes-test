@@ -9,11 +9,12 @@ import reduxPromise from 'redux-promise';
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
 import usersReducer from './reducers/users_reducer';
+import activeUserReducer from './reducers/active_user_reducer'
 
 // State and reducers
 const reducers = combineReducers({
   users: usersReducer,
-  // selectedUser: selectedUserReducer
+  activeUser: activeUserReducer
 });
 
 const middlewares = applyMiddleware(reduxPromise);

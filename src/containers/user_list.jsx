@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import User from '../containers/user';
 
 import { setUsers } from '../actions';
+import { setActiveUser } from '../actions';
 
 class UserList extends Component {
 
@@ -12,11 +13,14 @@ class UserList extends Component {
   }
 
   render() {
+    let containerClasses = "user-list col-sm-4"
+    if (this.props.user === this.props.activeUser) {
+      containerClasses += " selected";
+    }
+
     return (
-      <div>
-        {this.props.users.map((user, index) => {
-          return <User key={user.id} user={user} tabIndex={index} />;
-        })}
+      <div className={containerClasses}>
+        {this.props.users.map((user) => <p key={user.id} onClick={() => this.props.setActiveUser(user)}>{user.name}</p> )}
       </div>
     );
   }
@@ -24,15 +28,16 @@ class UserList extends Component {
 
 function mapStateToProps(state) {
  return {
-  users: state.users
+  users: state.users,
+  activeUser: state.user
  };
 }
 
 function mapDispatchToProps(dispatch) {
  return bindActionCreators(
- { setUsers },
- dispatch
- );
+   { setUsers, setActiveUser },
+   dispatch
+   );
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(UserList);
